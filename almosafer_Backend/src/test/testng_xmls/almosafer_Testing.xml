@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Suite" >
+
+    <!-- Tests Start-->
+    <test preserve-order="true" name="calculateBulkRewards" enabled="true">
+        <classes>
+            <class name="flight.PostRewards">
+                <methods>
+                    <include name="calculateBulkRewards"/>
+                </methods>
+            </class>
+            <class name="flight.GetFlightQuote">
+                <methods>
+                    <include name="flightQuotes"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
